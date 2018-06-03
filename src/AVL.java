@@ -53,9 +53,9 @@ public class AVL<E extends Comparable<E>> implements Set<E>
 	}
 	
 	/* return the new root of the tree after left rotation
-	 * 			x               y
+	 * 		    x               y
 	 * 		   / \             / \ 
-	 * 		  T1	  y    =>     x   T3
+	 * 		  T1  y    =>     x   T3
 	 * 		      /\         /\
 	 * 		     T2 T3      T1 T2
 	 */
@@ -77,9 +77,9 @@ public class AVL<E extends Comparable<E>> implements Set<E>
 
 	
 	/* return the new root of the tree after left rotation
-	 * 			x               y
+	 * 		    x               y
 	 * 		   / \             / \ 
-	 * 		  T1	  y    <=     x   T3
+	 * 		  T1  y    <=     x   T3
 	 * 		      /\         /\
 	 * 		     T2 T3      T1 T2
 	 */
