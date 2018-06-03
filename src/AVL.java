@@ -181,13 +181,13 @@ public class AVL<E extends Comparable<E>> implements Set<E>
 		{
 			return r;
 		}
-		else if(k.compareTo(r.value) < 0)
+		else if(r.value.compareTo(k) > 0)
 		{
 			r.left = add(k, r.left);
 			recalculateHeight(r);
 			r = rebalanceLeft(r);
 		}
-		else
+		else if(r.value.compareTo(k) < 0)
 		{
 			r.right = add(k, r.right);			
 			recalculateHeight(r);
